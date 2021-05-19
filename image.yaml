@@ -14,7 +14,7 @@ spec:
   serviceAccount: default
   source:
     git:
-      revision: master
-      url: http://github.com/0pens0/cd_demo
+      revision: main
+      url: http://github.com/0pens0/cb_demo
   successBuildHistoryLimit: 10
   tag: harbor.octarinesec.xyz/cb_demo/demo
