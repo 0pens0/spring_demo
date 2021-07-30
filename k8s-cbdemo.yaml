@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: demo
-        image: harbor.octarinesec.xyz/cb_demo/demo
+        image: harbor.cbksworld.com/tanzu/cb_demo
         ports:
         - containerPort: 8080
