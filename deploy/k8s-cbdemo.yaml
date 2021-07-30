@@ -14,6 +14,20 @@ spec:
     spec:
       containers:
       - name: demo
-        image: harbor.octarinesec.xyz/cb_demo/demo
+        image: harbor.cbksworld.com/tanzu/cbdemo:latest
         ports:
         - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    name: demo
+  name: demo
+spec:
+  ports:
+    - port: 80
+      targetPort: 8080
+  selector:
+    app: demo
+  type: LoadBalancer
