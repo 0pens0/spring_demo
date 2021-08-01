@@ -14,11 +14,7 @@ spec:
     spec:
       containers:
       - name: demo
-<<<<<<< HEAD:deploy/k8s-cbdemo.yaml
         image: harbor.cbksworld.com/tanzu/cbdemo:latest
-=======
-        image: harbor.cbksworld.com/tanzu/cbdemo
->>>>>>> 26253783794c5e22451f7525c9c3df3d1b834e97:k8s-cbdemo.yaml
         ports:
         - containerPort: 8080
 ---
