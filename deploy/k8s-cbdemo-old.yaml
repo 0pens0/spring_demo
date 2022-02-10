@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: demo
-        image: harbor.cbksworld.com/cbnode/cbnode
+        image: harbor.cbksworld.com/tanzu/cbdemo:b1.20210825.133555
         ports:
         - containerPort: 8080
 ---

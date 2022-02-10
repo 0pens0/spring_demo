@@ -1,7 +1,7 @@
 apiVersion: kpack.io/v1alpha1
 kind: Image
 metadata:
-  name: cbdemo-test
+  name: cbdemo
 spec:
   build:
     resources: {}
@@ -17,4 +17,4 @@ spec:
       revision: main
       url: http://github.com/0pens0/cb_demo
   successBuildHistoryLimit: 10
-  tag: harbor.octarinesec.xyz/cb_demo/demo
+  tag: harbor.cbksworld.com/tanzu/cbdemo
