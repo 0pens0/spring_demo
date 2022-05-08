@@ -1,0 +1,18 @@
+apiVersion: carto.run/v1alpha1
+kind: Workload
+metadata:
+  name: cbdemo
+  labels:
+    apps.tanzu.vmware.com/workload-type: web
+    app.kubernetes.io/part-of: cbdemo
+spec:
+  params:
+    - name: run-image
+      value: harbor.cbksworld.com/tapdemo/cbdemo
+    - name: tekton-pipeline-name
+      value: developer-defined-tekton-pipeline
+  source:
+    git:
+      url: https://github.com/0pens0/spring_demo
+      ref:
+        branch: main
